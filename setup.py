@@ -21,5 +21,5 @@ setup(
     license='MIT License',
     install_requires=['requests'],
     description='Python wrapper around DataNitro Voyager API',
-    long_description=''' DataNitro Voyager allows you to push data directly to your users' Excel spreadsheets, without building custom add-ins or touching the Windows stack. Use this wrapper to programmatically push data from Pythonand manage users and their permissions. See http://voyager.datanitro.com for more details. '''
+    long_description=''' DataNitro Voyager allows you to push data directly to your users' Excel spreadsheets, without building custom add-ins or touching the Windows stack. Use this wrapper to programmatically push data from Python and manage users and their permissions. See http://voyager.datanitro.com for more details. '''
 )
