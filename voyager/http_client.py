@@ -1,7 +1,7 @@
 import requests
 import json
 
-_VOYAGER_API = "http://api.datanitro.com/v1"
+_VOYAGER_API = "https://api.datanitro.com/v1"
 #_VOYAGER_API = "http://localhost:8000/v1"
 
 class VoyagerError(Exception):
@@ -90,7 +90,7 @@ class VoyagerHttp(object):
         try:
             response = req_methods[method](_VOYAGER_API + endpoint,
                                            headers=all_headers,
-                                           data=json.dumps(data), 
+                                           data=json.dumps(data),
                                            timeout = self.timeout)
             response.raise_for_status()
         except requests.exceptions.HTTPError as ex:
